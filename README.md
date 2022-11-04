@@ -62,7 +62,7 @@ heart of the problem and create a new schema for Udiddit. My new schema should a
 reflect fixes to the shortcomings I have pointed to in the previous exercise. Here are the 
 guidelines I should follow:
 
-### 1 -  Guideline 1: 
+### Guideline 1: 
 Here is a list of features and specifications that Udiddit needs in order to support its website and administrative interface:
 
   <ol>
@@ -118,7 +118,7 @@ automatically deleted too.</li>
 
 </ul>
 
-### 2 - Guideline 2: 
+### Guideline 2: 
 Here is a list of queries that Udiddit needs in order to support its website and administrative interface. I don’t necessarily need to produce the DQL 
 for those queries: they are only provided to guide the design of the new database 
 schema.
@@ -143,10 +143,10 @@ of upvotes and the number of downvotes</li>
 
 
 
-### 3 - Guideline 3: 
+### Guideline 3: 
 I’ll need to use normalization, various constraints, as well as indexes in my new database schema. I should use named constraints and indexes to make my
 schema cleaner.
-### 4 - Guideline 4: 
+### - Guideline 4: 
 My new database schema will be composed of five (5) tables that should have an auto-incrementing id as their primary key.
 
 ## Part III: Migrate the provided data
