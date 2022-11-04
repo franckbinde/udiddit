@@ -146,7 +146,7 @@ of upvotes and the number of downvotes</li>
 ### Guideline 3: 
 I’ll need to use normalization, various constraints, as well as indexes in my new database schema. I should use named constraints and indexes to make my
 schema cleaner.
-### - Guideline 4: 
+### Guideline 4: 
 My new database schema will be composed of five (5) tables that should have an auto-incrementing id as their primary key.
 
 ## Part III: Migrate the provided data
