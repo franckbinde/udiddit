@@ -5,7 +5,7 @@
 CREATE TABLE "users" (
     "id" SERIAL,
     "username" VARCHAR(25) NOT NULL,
-    "last_login_date" DATE,
+    "last_login_date" TIMESTAMP,
     CONSTRAINT "users_pk" PRIMARY KEY ("id"),
     CONSTRAINT "not_empty_username" CHECK (LENGTH(TRIM("username")) > 0)
 );
@@ -34,7 +34,7 @@ CREATE TABLE "posts" (
     "url" VARCHAR(2048),
     "content" TEXT,
     "topic_id" INTEGER NOT NULL,
-    "created_at" DATE,
+    "created_at" TIMESTAMP,
     CONSTRAINT "not_empty_title_post" CHECK (LENGTH(TRIM("title")) > 0),
     
     CONSTRAINT "url_or_post" CHECK (("url" IS NOT NULL AND "content" IS NULL) 
@@ -63,7 +63,7 @@ CREATE TABLE "comments" (
     "parent_comment_id" BIGINT,
     "post_id" BIGINT NOT NULL,
     "user_id" INTEGER,
-    "created_at" DATE,
+    "created_at" TIMESTAMP,
     CONSTRAINT "comments_pk" PRIMARY KEY ("id"),
     CONSTRAINT "not_empty_comment_text" CHECK (LENGTH(TRIM("content")) > 0),
     CONSTRAINT "valid_parent_comment" 
